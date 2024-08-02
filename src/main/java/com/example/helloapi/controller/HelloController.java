@@ -14,7 +14,7 @@ public class HelloController {
 
         Map<String, String> map = new HashMap<>();
 
-        map.put("rtn","hello");
+        map.put("rtn","hello2");
 
         return map;
 
