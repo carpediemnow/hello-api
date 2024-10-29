@@ -10,11 +10,22 @@ import java.util.Map;
 public class HelloController {
 
     @RequestMapping("/hello")
-    public Object GetHello() {
+    public Object getHello() {
 
         Map<String, String> map = new HashMap<>();
 
         map.put("rtn","hello2");
+
+        return map;
+
+    }
+
+    @RequestMapping("/")
+    public Object getRoot() {
+
+        Map<String, String> map = new HashMap<>();
+
+        map.put("rtn","root");
 
         return map;
 
